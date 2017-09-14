@@ -100,9 +100,9 @@ int max_sum(int n,int *a,int &besti,int &bestj)
 
     for (i=0;i<=n-1;i++) {   //求出到a[i]的最大字段和 
         if (temp > 0) 
-            temp += a[i];
+            temp += a[i];   //如果上一次加的和是正数,那么继续往后加
         else
-            temp = a[i];
+            temp = a[i];    //如果上一次加的和是负数,那么之前的结果不要了(已保存到了b[i-1]),重新开始从当前位置开始加
         b[i] = temp;
     }
 

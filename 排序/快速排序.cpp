@@ -75,7 +75,7 @@ int Partition(int a[],int low,int high)
 		{
 			high--;
 		}
-		a[low] = a[high];  //退出循环时，a<=pivotkey
+		a[low] = a[high];  //退出循环时，a[high]<=pivotkey
 
 		while(low < high && a[low]<=pivotkey)
 		{
@@ -116,7 +116,6 @@ int main(void)
 		cout<<a[i]<<" ";
 	}
 
-	cout<<endl<<dd<<" ";
 	system("pause");
 	return 0;
 }
