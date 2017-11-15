@@ -224,10 +224,6 @@ void Test12() {
 
 
 int main() {
-    /*char *matrix = "bfeh";
-    char *str = "abtgcfcsjdeh";
-    cout << hasPath(matrix, 3, 3, str);*/
-
     Test1();
     Test2();
     Test3();
